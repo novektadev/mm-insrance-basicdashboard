@@ -361,8 +361,7 @@ async function loadModelData() {
     try {
         // state management - Sets default company to GNP id = 45
         if (sessionStorage.getItem('selectedNombreCortoId') === null) {
-            console.log('setting default value: 41')
-            sessionStorage.setItem('selectedNombreCortoId', 41);
+            sessionStorage.setItem('selectedNombreCortoId', 45);
         }
         if (!catNombresCortos) {
             await loadCatNombresCortosJson();
