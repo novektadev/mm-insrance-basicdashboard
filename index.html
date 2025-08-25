@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/flaticon/novektaFlaticon32px.png">
+        <title>NOVEKTA</title>
+        <script src="https://cdn.jsdelivr.net/npm/danfojs@1.2.0/lib/bundle.min.js"></script>
+        <!--script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--script type="module" src="/assets/js/common.js"></script-->
+    </head>
+
+    <body>
+         <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
+            <div class="container"> 
+                <div class="navbar-brand" style="display: flex; align-items: center;">
+                    <a class="navbar-item" href="#home">
+                        <img src="assets/img/icons/novektaRecRedTransparent40px.png" alt="Company Logo" style="max-height: 3rem;">
+                    </a>
+                    <h3>
+                        Tablero Informacion Siniestralidad <br>Desempeño Financiero
+                    </h3>
+                </div>
+            </div>
+        </nav>
+
+        <!--section class="section" style="flex-grow: 1; padding-top: 52px; padding-bottom: 52px; overflow-y: auto;"-->
+        <section class="section" style="flex-grow: 1; padding-top: 52px; padding-bottom: 52px; overflow-y: auto;">
+            
+            <div class="content-wrapper" id="contentWrapper"
+                 style="background-color: white; color: #363636; max-width: 960px; margin: 0 auto; padding: 1rem;">
+
+                <div class="tabs is-boxed" id="tabsContainer">
+                    <ul id="tabLists">
+                        <li class="tab" id="allMarketTab">
+                            <a>Todo El Mercado</a>
+                        </li>
+                        <li class="tab" id="companyTab">
+                            <a >Aseguradora Especifica</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="allMarketTabContainer" class="content-tab">    
+                    <p>Mercado Nacional: Ramos de Gastos Medicos & Salud</p>
+                    <div id="allMarketChartsContainer" style="min-height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px;">
+                        <div id="allMarketChart1" class="container" style="width:100%; height: 500px;"></div>
+                        <div id="allMarketChart2" class="container" style="width:100%; height: 500px;"></div>
+                        <div id="allMarketChart3" class="container" style="width:100%; height: 500px;"></div>
+                        <div id="allMarketChart4" class="container" style="width:100%; height: 500px;"></div>
+                    </div>
+                </div>
+
+                <div id="companyTabContainer" class="content-tab">
+                    <p>Compañia de Seguros</p>
+                    <div class="dropdown is-active" id="companiesDropDownMenu" style="width: 100%">
+                        <div class="dropdown-trigger" id="companiesDropDownMenuTrigger"  style="width: 100%;">
+                            <button class="button" id="companiesDropDownMenuTriggerButton"  aria-haspopup="true" aria-controls="dropdown-menu" style="width: 100%; justify-content: space-between; background-color: #f9f9f9;">
+                                <span>Seleccione la compania de interes</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="dropdown-menu" id="companyDropDownMenu" role="menu" style="width: 100%; position: fixed; z-index: 1000; max-height: 300px; overflow-y: auto; width:960px">
+                            <div class="dropdown-content" id="companyDropDownMenuItems"  style="max-height: inherit;">
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <p>Ramos de Gastos Medicos y Salud</p>
+                    <div id="companyChartsContainer" style="min-height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px;">
+                        <div id="companyChart1" class="container" style="width:100%; height: 500px;"></div>
+                        <div id="companyChart2" class="container" style="width:100%; height: 500px;"></div>
+                        <div id="companyChart3" class="container" style="width:100%; height: 500px;"></div>
+                        <div id="companyChart4" class="container" style="width:100%; height: 500px;"></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <footer class="footer is-fixed-bottom has-background-dark has-text-white">
+            <div class="container"> <div class="content has-text-centered">
+                    <p><strong class="has-text-white">novekta</strong> 2025</p>
+                    <p>Tiempo local en Culiacán Sinaloa: <span id="currentTime"></span></p>
+                    <div class="mt-4">
+                        <a class="button is-outlined is-light mr-2">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a class="button is-outlined is-light mr-2">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a class="button is-outlined is-light">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+        </footer>
+
+        <script type="module" src="/assets/js/readModelData.js"></script>
+        <script type="module" src="/assets/js/script.js"></script>
+
+    </body>
+
+</html>
