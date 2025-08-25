@@ -84,7 +84,7 @@ async function updateCompanyCharts() {
                         df1.setIndex({ column: 'Fecha', inplace: true });
                         //
                         const layout = {title: {text: selectedNombreCortoItem.nombreCorto.toUpperCase(), font: { size: 16 }, x: 0.5, xanchor: 'center'},
-                                        xaxis: {title: 'Fecha', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
+                                        xaxis: {title: 'Periodo', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
                                         yaxis: {title: 'Millones de Pesos', gridcolor: '#f0f0f0', tickprefix: '$'},
                                         plot_bgcolor: '#f9f9f9', paper_bgcolor: '#ffffff', height: 500,
                                         margin: { l: 80, r: 40, t: 100, b: 120 },
@@ -106,7 +106,7 @@ async function updateCompanyCharts() {
                         df2.setIndex({ column: 'Fecha', inplace: true });
                         //
                         const layout = {title: {text: selectedNombreCortoItem.nombreCorto.toUpperCase(), font: { size: 16 }, x: 0.5, xanchor: 'center'},
-                                        xaxis: {title: 'Fecha', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
+                                        xaxis: {title: 'Periodo', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
                                         yaxis: {title: 'Indice de Siniestralidad', gridcolor: '#f0f0f0'},
                                         plot_bgcolor: '#f9f9f9', paper_bgcolor: '#ffffff', height: 500,
                                         margin: { l: 80, r: 40, t: 100, b: 120 },
@@ -130,7 +130,7 @@ async function updateCompanyCharts() {
                         //console.log(df3.tail(3).print())
                         //
                         const layout = {title: {text: selectedNombreCortoItem.nombreCorto.toUpperCase(), font: { size: 16 }, x: 0.5, xanchor: 'center'},
-                                        xaxis: {title: 'Fecha', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
+                                        xaxis: {title: 'Periodo', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
                                         yaxis: {title: 'Ingresos Operativos (Millones MXN)', gridcolor: '#f0f0f0'},
                                         plot_bgcolor: '#f9f9f9', paper_bgcolor: '#ffffff', height: 500,
                                         margin: { l: 80, r: 40, t: 100, b: 120 },
@@ -152,7 +152,7 @@ async function updateCompanyCharts() {
                         df4.setIndex({ column: 'Fecha', inplace: true });
                         //
                         const layout = {title: {text: selectedNombreCortoItem.nombreCorto.toUpperCase(), font: { size: 16 }, x: 0.5, xanchor: 'center'},
-                                        xaxis: {title: 'Fecha', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
+                                        xaxis: {title: 'Periodo', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
                                         yaxis: {title: 'Margen de Utilidad Operativa', gridcolor: '#f0f0f0'},
                                         plot_bgcolor: '#f9f9f9', paper_bgcolor: '#ffffff', height: 500,
                                         margin: { l: 80, r: 40, t: 100, b: 120 },
@@ -212,7 +212,7 @@ async function updateMarketCharts() {
                     df1.setIndex({ column: 'Fecha', inplace: true });
                     //
                     const layout = {title: {text: 'Prima vs Costo de Siniestralidad (Historico)', font: { size: 18 }, x: 0.5, xanchor: 'center'},
-                                    xaxis: {title: 'Fecha', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
+                                    xaxis: {title: 'Periodo', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
                                     yaxis: {title: 'Millones de Pesos', gridcolor: '#f0f0f0', tickprefix: '$'},
                                     plot_bgcolor: '#f9f9f9', paper_bgcolor: '#ffffff', height: 500,
                                     margin: { l: 80, r: 40, t: 100, b: 120 },
@@ -234,7 +234,7 @@ async function updateMarketCharts() {
                     df2.setIndex({ column: 'Fecha', inplace: true });
                     //
                     const layout = {title: {text: 'Indice de Siniestralidad (Historico)', font: { size: 18 }, x: 0.5, xanchor: 'center'},
-                                    xaxis: {title: 'Fecha', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
+                                    xaxis: {title: 'Periodo', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
                                     yaxis: {title: 'Indice de Siniestralidad', gridcolor: '#f0f0f0'},
                                     plot_bgcolor: '#f9f9f9', paper_bgcolor: '#ffffff', height: 500,
                                     margin: { l: 80, r: 40, t: 100, b: 120 },
@@ -256,7 +256,7 @@ async function updateMarketCharts() {
                     df3.setIndex({ column: 'Fecha', inplace: true });
                     //
                     const layout = {title: {text: 'Ingresos Operativos (Historico)', font: { size: 18 }, x: 0.5, xanchor: 'center'},
-                                    xaxis: {title: 'Fecha', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
+                                    xaxis: {title: 'Periodo', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
                                     yaxis: {title: 'Ingresos Operativos (Millones MXN)', gridcolor: '#f0f0f0'},
                                     plot_bgcolor: '#f9f9f9', paper_bgcolor: '#ffffff', height: 500,
                                     margin: { l: 80, r: 40, t: 100, b: 120 },
@@ -278,7 +278,7 @@ async function updateMarketCharts() {
                     df4.setIndex({ column: 'Fecha', inplace: true });
                     //
                     const layout = {title: {text: 'Margen de Utilidad Operativa (Historico)', font: { size: 18 }, x: 0.5, xanchor: 'center'},
-                                    xaxis: {title: 'Fecha', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
+                                    xaxis: {title: 'Periodo', tickangle: -45, gridcolor: '#f0f0f0', automargin: true, tickfont: { size: 10 }},
                                     yaxis: {title: 'Margen de Utilidad Operativa', gridcolor: '#f0f0f0'},
                                     plot_bgcolor: '#f9f9f9', paper_bgcolor: '#ffffff', height: 500,
                                     margin: { l: 80, r: 40, t: 100, b: 120 },
